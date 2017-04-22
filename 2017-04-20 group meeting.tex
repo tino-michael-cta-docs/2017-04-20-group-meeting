@@ -56,7 +56,7 @@
 \def\Put(#1,#2)#3{\leavevmode\makebox(0,0){\put(#1,#2){#3}}}
 
 
-\def\mydate{\leavevmode\hbox{\the\year-\twodigits\month-\twodigits\day}}
+\def\mydate{\leavevmode\hbox{\the\year-\twodigits\month-20}}
 \def\twodigits#1{\ifnum#1<10 0\fi\the#1}
 
 
@@ -72,7 +72,7 @@
         \node[anchor=east] at ([xshift=+150pt]centre) {\includegraphics[height=40pt]{../Resources/Pictures/Logo_CTA_blue.png}};
     \end{tikzpicture}
 }
-\date[\mydate]{Group Meeting\\2017-04-20}
+\date[\mydate]{Group Meeting\\\mydate}
 
 
 
